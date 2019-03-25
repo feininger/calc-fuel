@@ -16,9 +16,9 @@ var total = document.querySelector("#total-cost");
 
 buttonCalc.addEventListener("click", function (event) {
   console.log(document.querySelector('input[name="radio"]:checked').getAttribute("id"));
-  var expense = document.querySelector("#input-1").value;
-  var distance = document.querySelector("#input-2").value;
-  var cost = document.querySelector("#input-3").value;
+  var expense = document.querySelector("#input-1").value.replace(',','.');
+  var distance = document.querySelector("#input-2").value.replace(',','.');
+  var cost = document.querySelector("#input-3").value.replace(',','.');
   var radio = document.querySelector('input[name="radio"]:checked').getAttribute("id");
   if (radio == "allCost") {
     totalCost(expense, distance, cost);
