@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Калькулятор расхода топлива</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Калькулятор расхода топлива</h1>
+    <form class="form-calc" action="/">
+      <label class="label" for="allCost">
+        <input class="radio" type="radio" name="radio" id="allCost" checked>
+        <span class="radio-checkbox"></span>
+        Рассчитать общий расход
+      </label>
+      <label class="label" for="averageCost">
+        <input class="radio" type="radio" name="radio" id="averageCost">
+        <span class="radio-checkbox"></span>
+        Рассчитать средний расход на 100 км
+      </label>  
+      <div class="line">
+        <input class="input" type="text" id="input-1" placeholder="0">
+        <span class="legend">Средний расход топлива (литров/100 км)</span><br>
+      </div>
+      <div class="line">
+        <input class="input" type="text" id="input-2" placeholder="0">
+        <span class="legend">Расстояние (км)</span><br>
+      </div>
+      <div class="line">
+        <input class="input" type="text" id="input-3" placeholder="0">
+        <span class="legend">Стоимость топлива (руб./литр)</span><br>
+      </div>
+      <button class="button" id="calc">Рассчитать</button>
+      <p class="result" id="total-expense"></p>
+      <p class="result" id="total-cost"></p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
