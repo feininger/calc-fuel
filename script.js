@@ -25,7 +25,6 @@ buttonCalc.addEventListener("click", function (event) {
   } else {
     averageCost(expense, distance, cost);
   }
-  
 });
 
 function totalCost(expense, distance, cost) {
